@@ -1,0 +1,5 @@
+﻿DSS: có các đối tượng cần quản lý là
+0. Truy suất CSDL
+1. Mệnh đề: mã, tên, mô tả
+2. Tri thức: 
+3. Mô tơ suy diễn:
