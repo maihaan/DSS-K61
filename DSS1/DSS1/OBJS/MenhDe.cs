@@ -16,10 +16,9 @@ namespace DSS1.OBJS
         public String MoTa { get; set; }
 
         // Phuong thuc
-        public int Them(String ten, int ma, String moTa)
+        public int Them(String ten, String moTa)
         {
-            String query = "INSERT INTO tbMenhDe(Ma, Ten, MoTa) VALUES("
-                + ma + ", N'"
+            String query = "INSERT INTO tbMenhDe(Ten, MoTa) VALUES(N'"
                 + ten + "', N'"
                 + moTa + "')";
             int dem = da.Write(query);

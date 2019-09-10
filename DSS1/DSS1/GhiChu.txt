@@ -1,5 +1,18 @@
 ﻿DSS: có các đối tượng cần quản lý là
 0. Truy suất CSDL
 1. Mệnh đề: mã, tên, mô tả
-2. Tri thức: 
-3. Mô tơ suy diễn:
+2. Tri thức: mã, tên, mô tả, vế trái (tập mệnh đề), vế phải (1 mệnh đề)
+3. Mô tơ suy diễn: 
+- Tập sự kiện đã biết
+- Tập sự kiện cần tìm (mục tiêu)
+- Tập luật cần duyệt (một luật bị loại bỏ khi nào? khi luật được "áp dụng" thì
+luật đó bị loại bỏ)
+- Khi nào bài toán kết thúc (dừng duyệt)?
+	+ Tập luật cần duyệt rỗng
+	+ Tập sự kiện đã biết không thay đổi khi duyệt hết tập luật
+	+ Toàn bộ các mệnh đề của tập sự kiện cần tìm đều thuộc tập sự kiện đã biết (mong muốn)
+- INPUT: Tập sự kiện đã biết, Tập luật cần duyệt
+- OUTPUT: Tập sự kiện cần tìm
+Sau khi suy diễn, nếu không thành công thì có thể hỏi thêm người dùng bổ sung thêm thông tin
+dựa vào độ khớp với các sự kiện đã biết của các luật còn lại, nếu người dùng đồng ý thì bổ sung
+các sự kiện chưa biết ở vế trái của luật có độ khớp cao nhất vào tập sự kiện đã biết và suy diễn lại

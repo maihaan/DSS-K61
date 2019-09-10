@@ -155,5 +155,20 @@ namespace DSS1.OBJS
             }
             return null;
         }
+
+        public List<Luat> DocTatCa()
+        {
+            List<Luat> ds = new List<Luat>();
+            DataTable tb = Tim("");
+            if(tb != null && tb.Rows.Count > 0)
+            {
+                foreach(DataRow rw in tb.Rows)
+                {
+                    int ma = int.Parse(rw["Ma"].ToString());
+                    ds.Add(TimTheoMa(ma));
+                }
+            }            
+            return ds;
+        }
     }
 }
