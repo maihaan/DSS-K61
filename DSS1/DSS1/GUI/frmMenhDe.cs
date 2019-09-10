@@ -46,5 +46,68 @@ namespace DSS1.GUI
         {
             LamMoi();
         }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            MenhDe md = new MenhDe();
+            int ma = int.Parse(dgvDanhSach.SelectedRows[0].Cells["Ma"].Value.ToString());
+            md.Xoa(ma);
+            DocDuLieu();
+            LamMoi();
+        }
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+            if(String.IsNullOrEmpty(tbTen.Text))
+            {
+                MessageBox.Show("Bạn phải nhập tên mệnh đề");
+                tbTen.Focus();
+                return;
+            }
+
+            if(String.IsNullOrEmpty(tbMoTa.Text))
+            {
+                MessageBox.Show("Bạn phải nhập mô tả của mệnh đề");
+                tbMoTa.Focus();
+                return;
+            }
+
+            MenhDe md = new MenhDe();
+            if(md.Tim("Ten=N'" + tbTen.Text + "'") != null)
+            {
+                MessageBox.Show("Mệnh đề này đã tồn tại, bạn không thể thêm");
+                tbTen.Focus();
+                return;
+            }
+
+            md.Them(tbTen.Text, tbMoTa.Text);
+            DocDuLieu();
+            LamMoi();
+            tbTen.Focus();
+        }
+
+        private void btLuu_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(tbTen.Text))
+            {
+                MessageBox.Show("Bạn phải nhập tên mệnh đề");
+                tbTen.Focus();
+                return;
+            }
+
+            if (String.IsNullOrEmpty(tbMoTa.Text))
+            {
+                MessageBox.Show("Bạn phải nhập mô tả của mệnh đề");
+                tbMoTa.Focus();
+                return;
+            }
+
+            int ma = int.Parse(dgvDanhSach.SelectedRows[0].Cells["Ma"].Value.ToString());
+
+            MenhDe md = new MenhDe();
+            md.Sua(tbTen.Text, ma, tbMoTa.Text);
+            DocDuLieu();
+            LamMoi();
+        }
     }
 }

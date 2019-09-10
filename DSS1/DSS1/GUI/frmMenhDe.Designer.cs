@@ -91,6 +91,7 @@
             this.btThem.TabIndex = 5;
             this.btThem.Text = "Thêm mới";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // btLuu
             // 
@@ -100,6 +101,7 @@
             this.btLuu.TabIndex = 6;
             this.btLuu.Text = "Lưu";
             this.btLuu.UseVisualStyleBackColor = true;
+            this.btLuu.Click += new System.EventHandler(this.btLuu_Click);
             // 
             // btXoa
             // 
@@ -109,6 +111,7 @@
             this.btXoa.TabIndex = 7;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btLamMoi
             // 
