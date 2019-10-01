@@ -27,7 +27,10 @@ namespace DSS1.GUI
                 dgvDanhSach.DataSource = tb;
             }
             else
-                dgvDanhSach.Rows.Clear();
+                dgvDanhSach.DataSource = null;
+
+            btLuu.Enabled = false;
+            btXoa.Enabled = false;
         }
 
         private void frmMenhDe_Load(object sender, EventArgs e)
@@ -73,7 +76,8 @@ namespace DSS1.GUI
             }
 
             MenhDe md = new MenhDe();
-            if(md.Tim("Ten=N'" + tbTen.Text + "'") != null)
+            DataTable tb = md.Tim("Ten=N'" + tbTen.Text + "'");
+            if (tb != null && tb.Rows.Count > 0)
             {
                 MessageBox.Show("Mệnh đề này đã tồn tại, bạn không thể thêm");
                 tbTen.Focus();
@@ -108,6 +112,14 @@ namespace DSS1.GUI
             md.Sua(tbTen.Text, ma, tbMoTa.Text);
             DocDuLieu();
             LamMoi();
+        }
+
+        private void dgvDanhSach_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tbTen.Text = dgvDanhSach.SelectedRows[0].Cells["Ten"].Value.ToString();
+            tbMoTa.Text = dgvDanhSach.SelectedRows[0].Cells["MoTa"].Value.ToString();
+            btLuu.Enabled = true;
+            btXoa.Enabled = true;
         }
     }
 }

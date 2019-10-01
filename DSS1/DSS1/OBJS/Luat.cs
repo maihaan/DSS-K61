@@ -24,7 +24,7 @@ namespace DSS1.OBJS
             String queryLuat = "INSERT INTO tbLuat(Ten, MoTa, MaMenhDe) VALUES(N'"
                 + ten + "', N'"
                 + moTa + "', "
-                + VePhai.Ma + ")";
+                + vePhai.Ma + ")";
             int dem = da.Write(queryLuat);
             int ma = da.GetMaxColumnValue("tbLuat", "Ma");
             int demVT = 0;

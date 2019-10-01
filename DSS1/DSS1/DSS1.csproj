@@ -50,6 +50,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLuat.Designer.cs">
+      <DependentUpon>frmLuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmMenhDe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="OBJS\SuyDienTien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\frmLuat.resx">
+      <DependentUpon>frmLuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmMenhDe.resx">
       <DependentUpon>frmMenhDe.cs</DependentUpon>
     </EmbeddedResource>

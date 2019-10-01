@@ -6,7 +6,7 @@
       <Value Profile="(Default)">.\mssql</Value>
     </Setting>
     <Setting Name="database" Type="System.String" Scope="User">
-      <Value Profile="(Default)">DSS1BD</Value>
+      <Value Profile="(Default)">DSS1DB</Value>
     </Setting>
     <Setting Name="userid" Type="System.String" Scope="User">
       <Value Profile="(Default)">dss</Value>

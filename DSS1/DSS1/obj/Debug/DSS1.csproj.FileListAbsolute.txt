@@ -8,3 +8,4 @@ D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.csproj.GenerateResource.cache
 D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.csproj.CoreCompileInputs.cache
 D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.exe
 D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.pdb
+D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.GUI.frmLuat.resources

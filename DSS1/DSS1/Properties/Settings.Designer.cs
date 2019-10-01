@@ -37,7 +37,7 @@ namespace DSS1.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("DSS1BD")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DSS1DB")]
         public string database {
             get {
                 return ((string)(this["database"]));
