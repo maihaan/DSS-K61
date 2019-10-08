@@ -25,10 +25,13 @@ namespace DSS1.OBJS
         {
             List<MenhDe> ketQua = new List<MenhDe>();
             Boolean tiepTuc = true;
-            while(tiepTuc)
+            List<Luat> tapLuatTMP = new List<Luat>();
+            foreach (Luat l in TapLuat)
+                tapLuatTMP.Add(l);
+            while (tiepTuc)
             {
                 // Tinh huong 1: Tap luat rong
-                if (TapLuat.Count == 0)
+                if (tapLuatTMP.Count == 0)
                 {
                     tiepTuc = false;
                     break;
@@ -49,6 +52,7 @@ namespace DSS1.OBJS
                 // Tinh huong 3: Tap su kien da biet khong thay doi sau khi duyet het tap luat
                 int dem = TapSKDaBiet.Count;
                 Rank.Clear();
+
                 foreach (Luat r in TapLuat)
                 {
                     // Kiem tra xem ve trai cua luat co thuoc tap su kien da biet hay khong
@@ -59,7 +63,13 @@ namespace DSS1.OBJS
                     int demPT = 0;
                     foreach (MenhDe m in veTrai)
                     {
-                        if (!TapSKDaBiet.Contains(m))
+                        Boolean timThay = false;
+                        foreach(MenhDe md in TapSKDaBiet)
+                        {
+                            if (md.Ma == m.Ma)
+                                timThay = true;
+                        }
+                        if (!timThay)
                         {
                             apDung = false;
                         }
@@ -73,7 +83,7 @@ namespace DSS1.OBJS
                             TapSKDaBiet.Add(r.VePhai);
                         if(!ketQua.Contains(r.VePhai))
                             ketQua.Add(r.VePhai);
-                        TapLuat.Remove(r);
+                        tapLuatTMP.Remove(r);
                     }
                     else
                         Rank.Add((float)demPT / veTrai.Count);
@@ -83,8 +93,6 @@ namespace DSS1.OBJS
                     tiepTuc = false;
                     break;
                 }
-
-
             }
             return ketQua;
         }
