@@ -15,7 +15,7 @@ namespace DSS1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI.frmLuat());
+            Application.Run(new Form1());
         }
     }
 }

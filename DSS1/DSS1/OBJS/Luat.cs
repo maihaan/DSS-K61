@@ -43,7 +43,7 @@ namespace DSS1.OBJS
             String queryLuat = "UPDATE tbLuat SET Ten=N'"
                 + ten + "', MoTa=N'"
                 + moTa + "', MaMenhDe="
-                + VePhai.Ma + " WHERE Ma=" + ma;            
+                + vePhai.Ma + " WHERE Ma=" + ma;            
             int dem = da.Write(queryLuat);
 
             // Cap nhat cho ve trai
@@ -108,7 +108,7 @@ namespace DSS1.OBJS
 
         public int Xoa(int ma)
         {
-            String query = "DELETE tbMenhDe WHERE Ma=" + ma;
+            String query = "DELETE tbLuat WHERE Ma=" + ma;
             int dem = da.Write(query);
             return dem;
         }
@@ -116,7 +116,7 @@ namespace DSS1.OBJS
         public DataTable Tim(String dieuKien)
         {
             // SELECT Ma, Ten, MoTa FROM tbMenhDe WHERE dieuKien
-            String query = "SELECT Ma, Ten, MoTa FROM tbMenhDe";
+            String query = "SELECT Ma, Ten, MoTa, MaMenhDe FROM tbLuat";
             if (!String.IsNullOrEmpty(dieuKien))
                 query += " WHERE " + dieuKien;
             DataTable tb = new DataTable();

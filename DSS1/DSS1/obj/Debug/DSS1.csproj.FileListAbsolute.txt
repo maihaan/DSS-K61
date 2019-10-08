@@ -1,7 +1,6 @@
 D:\Projects\HHTRQDK61\DSS1\DSS1\bin\Debug\DSS1.exe.config
 D:\Projects\HHTRQDK61\DSS1\DSS1\bin\Debug\DSS1.exe
 D:\Projects\HHTRQDK61\DSS1\DSS1\bin\Debug\DSS1.pdb
-D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.csprojAssemblyReference.cache
 D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.GUI.frmMenhDe.resources
 D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.Properties.Resources.resources
 D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.csproj.GenerateResource.cache
@@ -9,3 +8,6 @@ D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.csproj.CoreCompileInputs.cache
 D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.exe
 D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.pdb
 D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.GUI.frmLuat.resources
+D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.csprojAssemblyReference.cache
+D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.Main.resources
+D:\Projects\HHTRQDK61\DSS1\DSS1\obj\Debug\DSS1.Form1.resources

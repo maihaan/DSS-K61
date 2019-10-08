@@ -16,3 +16,14 @@ luật đó bị loại bỏ)
 Sau khi suy diễn, nếu không thành công thì có thể hỏi thêm người dùng bổ sung thêm thông tin
 dựa vào độ khớp với các sự kiện đã biết của các luật còn lại, nếu người dùng đồng ý thì bổ sung
 các sự kiện chưa biết ở vế trái của luật có độ khớp cao nhất vào tập sự kiện đã biết và suy diễn lại
+
+Bài toán:
+	Cho các mệnh đề và luật sau:
+Tập SKDB: a, m, d
+Tập luật:
+	R1: a, b, n -> k
+	R2: a, d -> c
+	R3: b, c -> e
+	R4: e, k -> h
+	R5: b, m -> d
+Hỏi h có đúng không?

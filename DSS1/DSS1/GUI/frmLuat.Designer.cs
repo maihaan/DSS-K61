@@ -117,6 +117,7 @@
             this.dgvDanhSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDanhSach.Size = new System.Drawing.Size(677, 562);
             this.dgvDanhSach.TabIndex = 11;
+            this.dgvDanhSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSach_CellClick);
             // 
             // btThem
             // 
@@ -136,6 +137,7 @@
             this.btLuu.TabIndex = 13;
             this.btLuu.Text = "Lưu";
             this.btLuu.UseVisualStyleBackColor = true;
+            this.btLuu.Click += new System.EventHandler(this.btLuu_Click);
             // 
             // btXoa
             // 
@@ -145,6 +147,7 @@
             this.btXoa.TabIndex = 14;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btLamMoi
             // 
@@ -154,9 +157,11 @@
             this.btLamMoi.TabIndex = 15;
             this.btLamMoi.Text = "Làm mới";
             this.btLamMoi.UseVisualStyleBackColor = true;
+            this.btLamMoi.Click += new System.EventHandler(this.btLamMoi_Click);
             // 
             // clbVeTrai
             // 
+            this.clbVeTrai.CheckOnClick = true;
             this.clbVeTrai.FormattingEnabled = true;
             this.clbVeTrai.Location = new System.Drawing.Point(16, 221);
             this.clbVeTrai.Name = "clbVeTrai";
